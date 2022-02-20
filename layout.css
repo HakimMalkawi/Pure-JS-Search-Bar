@@ -40,11 +40,19 @@ body {
 
 .primary-search-container {
     grid-area: primary;
-    grid-template: repeat(2, min-content) / minmax(20rem, 50rem);
-    grid-template-areas: 
+    grid-template: repeat(3, min-content) / minmax(20rem, 50rem);
+    grid-template-areas:
+        "title" 
         "input"
         "buttons"   ;
     grid-gap: 2rem;
+}
+
+.primary-search-title {
+    grid-area: title;
+    font-size: 4rem;
+    text-align: center;
+    color: turquoise;
 }
 
 .primary-search-input {
